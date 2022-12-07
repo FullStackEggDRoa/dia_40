@@ -9,12 +9,13 @@ import ej1.Entidades.Libros;
 import ej1.servicios.serviciosLibros;
 
 /**
- *
- * Crear una clase llamada Libro que contenga los siguientes atributos: ISBN, Título, Autor,
-Número de páginas, y un constructor con todos los atributos pasados por parámetro y un
-constructor vacío. Crear un método para cargar un libro pidiendo los datos al usuario y
-luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
-numero de páginas.
+ * Ejercicio 1:
+   Crear una clase llamada Libro que contenga los siguientes atributos: ISBN, Título, Autor,
+   Número de páginas, y un constructor con todos los atributos pasados por parámetro y un
+   constructor vacío. Crear un método para cargar un libro pidiendo los datos al usuario y
+   luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
+   numero de páginas.
+* 
  * @author Dai
  */
 public class Ej1 {
@@ -24,10 +25,16 @@ public class Ej1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // Inataciones Clase Propia Servicios Libros
         serviciosLibros sl = new  serviciosLibros();
-        Libros lib = sl.crearLibro();
         
-        sl.mostrarDatos(lib);
+        // Inicialización Libre No. 1
+        System.out.println("Ingrese Información del Libro No. 1:");
+        Libros l1 = sl.crearLibro();
+        // Mostrar Información del Libro No. 1
+        System.out.println("-------------------------------------");
+        System.out.println("Mostrando Información del Libro No. 1");
+        sl.mostrarDatos(l1);
         
     }
     

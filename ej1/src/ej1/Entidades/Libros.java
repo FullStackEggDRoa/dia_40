@@ -10,24 +10,26 @@ package ej1.Entidades;
  * @author Dai
  */
 public class Libros {
-    //ISBN, Título, Autor,Número de páginas
-    private int ISBN;
+    // Atributos
+    // ISBN, Título, Autor,Número de páginas
+    
+    private String ISBN; //ISBN contiene guiones. Ej: 978-3-16-148410-0
     private String titulo;
     private String autor;
     private int numeroPag;
 
-    public Libros(int ISBN, String titulo, String autor, int numeroPag) {
+    public Libros(String ISBN, String titulo, String autor, int numeroPag) {
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autor = autor;
         this.numeroPag = numeroPag;
     
     }
-
+    //getters
     public Libros() {
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
